@@ -64,3 +64,4 @@ npx vercel dev
 
 
 
+<div align="center">Made by Vishal with 💙 and TypeScript</div>

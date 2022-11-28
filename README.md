@@ -145,6 +145,12 @@ And then run the app using:
 npx vercel dev
 ```
 
+## Special Thanks ❤
+
+- Inspired from [PiyushSuthar/github-readme-quotes](https://github.com/PiyushSuthar/github-readme-quotes).
+- [skolakoda/programming-quotes-api](https://github.com/skolakoda/programming-quotes-api) for Programming Quotes API.
+- [lukePeavey/quotable](https://github.com/lukePeavey/quotable) for Normal Quotes Api
+ 
 
 ## Show your support 🌈
 

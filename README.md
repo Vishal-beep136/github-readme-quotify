@@ -20,16 +20,47 @@
 Copy the markdown below and paste it in your profile **Github Readme**.
 
 ```
-[![Quotify](https://github-readme-quotify.vercel.app/api?type=mode=mixed&horizontal&theme=dark)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=monokai)](https://github.com/Vishal-beep136/github-readme-quotify)
 ```
 
 Parameters or Options
 
-| Options | Default  | About and available                                                                                         |
-| ------- | -------- | ------------------------------------------------------------------------------------------------------------|
-| mode    | programming | Quotes mode decides which type of qoutes you want. Available - `programming`,`normal`,`mixed`            |
-| type    | vertical | card type - `horizontal`, `vertical`                                                                        |
+| Options | Default  | About and available                                                                                                         |
+| ------- | -------- | ----------------------------------------------------------------------------------------------------------------------------|
+| mode    | programming | Quotes mode decides which type of qoutes you want. Available - `programming`,`normal`,`mixed`                            |
+| type    | vertical | card type - `horizontal`, `vertical`                                                                                        |
 | theme   | light    | card theme `dark`, `chartreuse-dark`, `radical`, `merko`, `gruvbox`, `tokyonight`, `algolia`, `monokai`, `dracula`, `nord`. |
 | quote   | -        | Customize your quote if you want to display your own otherwise not needed                                                   |
-| author  | Me       | The name of the quote's author                                                              |
+| author  | Me       | The name of the quote's author                                                                                              |
+
+## Usage
+
+### **Quote Mode**
+**Programming**
+> In this mode where you get quotes releated to programming only.
+
+You don't need to add **?mode=programming**
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=monokai)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+
+
+
+## Development 🚀
+
+To get started with developing this app locally, here are the steps:
+
+Install the dependencies for the app using,
+
+```bash
+npm install
+```
+
+And then run the app using:
+
+```bash
+npx vercel dev
+```
+
+
 

@@ -70,6 +70,63 @@ You need to add **?mode=mixed**
 
 [![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal)](https://github.com/Vishal-beep136/github-readme-quotify)
 
+### Themes
+
+### Light
+
+> You don't need to add **?theme=light** parameter.
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=light)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+### Dark
+
+> You need to add **?theme=dark** parameter.
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=dark)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+### Catppuccin
+
+> Variants:
+>
+> - Latte
+> - Frappe
+> - Macchiato
+> - Mocha
+> You need to add **?theme=catppuccin\_\<variant>** parameter. The current example is the Mocha variant, to use it add **?theme=catppuccin_mocha**.
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=catppuccin_mocha)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+### Algolia
+
+> You need to add **?theme=algolia** parameter.
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=algolia)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+### Monokai
+
+> You need to add **?theme=monokai** parameter.
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=programming&type=horizontal&theme=monokai)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+### Dracula
+
+> You need to add **?theme=dracula** parameter.
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=dracula)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+### Nord
+
+> You need to add **?theme=nord** parameter.
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=nord)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+## Custom
+
+> You need to replace the value after **?quote=** with your text use `+` or `%20` for spaces 
+> Example - **"?quote=My%20Quote"**
+
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&quote=My%20Quote)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 
 ## Development 🚀

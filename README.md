@@ -35,14 +35,40 @@ Parameters or Options
 
 ## Usage
 
-### **Quote Mode**
+### Quote Mode
 **Programming**
 > In this mode where you get quotes releated to programming only.
 
 You don't need to add **?mode=programming**
 
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=programming&type=horizontal&theme=monokai)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+**Normal**
+> In this mode where you get famous quotes
+
+You need to add **?mode=normal**
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=normal&type=horizontal&theme=monokai)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+**Mixed**
+> Why not both! In this mode you will get either Programming or Normal
+
+You need to add **?mode=mixed**
+
 [![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=monokai)](https://github.com/Vishal-beep136/github-readme-quotify)
 
+### Card Type
+**Vertical**
+
+> You don't need to add **?type=vertical** parameter.
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=vertical)](https://github.com/Vishal-beep136/github-readme-quotify)
+
+**Horizontal**
+
+> You need to add **?type=horizontal** parameter.
+
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 
 
@@ -63,5 +89,13 @@ npx vercel dev
 ```
 
 
+## Show your support 🌈
 
+Be sure to drop a 🌟 if you like the project!
+
+## Contributing 🤝
+Contributions, issues and feature requests are always welcome!
+
+
+<br>
 <div align="center">Made by Vishal with 💙 and TypeScript</div>

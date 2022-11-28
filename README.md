@@ -62,13 +62,13 @@ You need to add **?mode=mixed**
 
 > You don't need to add **?type=vertical** parameter.
 
-[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=vertical)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=vertical&quote=A%20skilled%20programmer%20is%20like%20a%20poet%20who%20can%20put%20into%20words%20those%20ideas%20that%20others%20find%20inexpressible.&author=Danny%20Hillis)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 **Horizontal**
 
 > You need to add **?type=horizontal** parameter.
 
-[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&quote=If%20opportunity%20doesn%27t%20knock%2C%20build%20a%20door.&author=Milton%20Berle)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 ### Themes
 
@@ -76,13 +76,13 @@ You need to add **?mode=mixed**
 
 > You don't need to add **?theme=light** parameter.
 
-[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=light)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=light&quote=If%20you%20think%20you%20can%2C%20you%20can.%20And%20if%20you%20think%20you%20can%27t%2C%20you%27re%20right.&author=Henry%20Ford)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 ### Dark
 
 > You need to add **?theme=dark** parameter.
 
-[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=dark)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=dark&quote=If%20you%20think%20you%20can%2C%20you%20can.%20And%20if%20you%20think%20you%20can%27t%2C%20you%27re%20right.&author=Henry%20Ford)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 ### Catppuccin
 
@@ -94,31 +94,31 @@ You need to add **?mode=mixed**
 > - Mocha
 > You need to add **?theme=catppuccin\_\<variant>** parameter. The current example is the Mocha variant, to use it add **?theme=catppuccin_mocha**.
 
-[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=catppuccin_mocha)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=catppuccin_mocha&quote=If%20you%20think%20you%20can%2C%20you%20can.%20And%20if%20you%20think%20you%20can%27t%2C%20you%27re%20right.&author=Henry%20Ford)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 ### Algolia
 
 > You need to add **?theme=algolia** parameter.
 
-[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=algolia)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=algolia&quote=If%20you%20think%20you%20can%2C%20you%20can.%20And%20if%20you%20think%20you%20can%27t%2C%20you%27re%20right.&author=Henry%20Ford)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 ### Monokai
 
 > You need to add **?theme=monokai** parameter.
 
-[![Quotify](https://github-readme-quotify.vercel.app/api?mode=programming&type=horizontal&theme=monokai)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=programming&type=horizontal&theme=monokai&quote=If%20you%20think%20you%20can%2C%20you%20can.%20And%20if%20you%20think%20you%20can%27t%2C%20you%27re%20right.&author=Henry%20Ford)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 ### Dracula
 
 > You need to add **?theme=dracula** parameter.
 
-[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=dracula)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=dracula&quote=If%20you%20think%20you%20can%2C%20you%20can.%20And%20if%20you%20think%20you%20can%27t%2C%20you%27re%20right.&author=Henry%20Ford)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 ### Nord
 
 > You need to add **?theme=nord** parameter.
 
-[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=nord)](https://github.com/Vishal-beep136/github-readme-quotify)
+[![Quotify](https://github-readme-quotify.vercel.app/api?mode=mixed&type=horizontal&theme=nord&quote=If%20you%20think%20you%20can%2C%20you%20can.%20And%20if%20you%20think%20you%20can%27t%2C%20you%27re%20right.&author=Henry%20Ford)](https://github.com/Vishal-beep136/github-readme-quotify)
 
 ## Custom
 

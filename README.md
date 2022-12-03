@@ -1,9 +1,10 @@
 <p align="center">
-  <img align="center" width="150" height="150" src="assets/quotify_logo.png" />
+  <img align="center" width="150" height="150" src="https://user-images.githubusercontent.com/82146140/205428839-3ceb9ae8-729d-4701-90fc-97e255f4405d.png" />
 
   <h1 align="center">Quotify For Readme</h1>
   <h3 align="center">Programming | Normal quotes for your readme.</h3>
 </p>
+
 
 <!-- Badges -->
 <p align="center">

@@ -17,6 +17,8 @@
   </a>
 </p>
 
+> Note : Since Programming Api is down due to Heroku no longer provide free hosting we cannot get programming quotes :( But we can get normal quotes :)
+
 ## ⚡ Setup
 Copy the markdown below and paste it in your profile **Github Readme**.
 

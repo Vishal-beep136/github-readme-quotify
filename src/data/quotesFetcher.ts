@@ -1,6 +1,11 @@
 import axios from "axios";
 
-const baseUrlProgrammingQuote = "https://programming-quotes-api.herokuapp.com";
+/**
+ * NOTE: Since programming quote api is down we no longer can get programming quotes.
+ */
+
+// THIS API IS SHUTDOWN
+// const baseUrlProgrammingQuote = "https://programming-quotes-api.herokuapp.com";
 const baseUrlNormalQuote = "https://api.quotable.io/random";
 
 export type QuoteMode = "programming" | "normal" | "mixed" | undefined;
@@ -40,12 +45,12 @@ const parseNormalQuote = (quoteData: NormalQuoteResponse) => {
 };
 
 // only fetching programming quote
-async function fetchProgrammingQuote(): Promise<QuoteResponse> {
-  const response = await axios.get(`${baseUrlProgrammingQuote}/quotes/random`);
-  const data = response.data;
-  const parsedQuote = parseProgrammingQuote(data);
-  return parsedQuote.quote.length < 220 ? parsedQuote : fetchProgrammingQuote();
-}
+// async function fetchProgrammingQuote(): Promise<QuoteResponse> {
+//   const response = await axios.get(`${baseUrlProgrammingQuote}/quotes/random`);
+//   const data = response.data;
+//   const parsedQuote = parseProgrammingQuote(data);
+//   return parsedQuote.quote.length < 220 ? parsedQuote : fetchProgrammingQuote();
+// }
 
 // only fetching normal quote
 async function fetchNormalQuote(): Promise<QuoteResponse> {
@@ -70,6 +75,7 @@ export async function fetchQuotes(
         : await fetchNormalQuote();
     }
     default:
-      return await fetchProgrammingQuote();
+      // return await fetchProgrammingQuote();
+      return await fetchNormalQuote();
   }
 }

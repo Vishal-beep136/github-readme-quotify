@@ -18,7 +18,7 @@
   "devDependencies": {
     "@vercel/node": "^2.6.4",
     "typescript": "^4.9.3",
-    "vercel": "^28.5.6"
+    "vercel": "^28.12.4"
   },
   "dependencies": {
     "axios": "^1.2.0"

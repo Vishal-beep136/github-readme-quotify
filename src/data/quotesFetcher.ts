@@ -1,11 +1,7 @@
 import axios from "axios";
 
-/**
- * NOTE: Since programming quote api is down we no longer can get programming quotes.
- */
-
-// THIS API IS SHUTDOWN
-// const baseUrlProgrammingQuote = "https://programming-quotes-api.herokuapp.com";
+const baseUrlProgrammingQuote =
+  "https://github.com/skolakoda/programming-quotes-api/raw/master/Data/quotes.json";
 const baseUrlNormalQuote = "https://api.quotable.io/random";
 
 export type QuoteMode = "programming" | "normal" | "mixed" | undefined;
@@ -44,13 +40,29 @@ const parseNormalQuote = (quoteData: NormalQuoteResponse) => {
   };
 };
 
+// get random programming quote
+const getRandomProgrammingQuote = (
+  quotes: ProgrammingQuoteResponse[]
+): ProgrammingQuoteResponse => {
+  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  return randomQuote.en.length < 220
+    ? randomQuote
+    : getRandomProgrammingQuote(quotes);
+};
+
 // only fetching programming quote
-// async function fetchProgrammingQuote(): Promise<QuoteResponse> {
-//   const response = await axios.get(`${baseUrlProgrammingQuote}/quotes/random`);
-//   const data = response.data;
-//   const parsedQuote = parseProgrammingQuote(data);
-//   return parsedQuote.quote.length < 220 ? parsedQuote : fetchProgrammingQuote();
-// }
+async function fetchProgrammingQuote(): Promise<QuoteResponse | null> {
+  try {
+    const response = await axios.get(baseUrlProgrammingQuote);
+    // whole programming quotes list
+    const data = response.data;
+    const randQuote = getRandomProgrammingQuote(data);
+    return parseProgrammingQuote(randQuote);
+  } catch (e) {
+    console.log(e);
+    return null;
+  }
+}
 
 // only fetching normal quote
 async function fetchNormalQuote(): Promise<QuoteResponse> {
@@ -62,6 +74,11 @@ async function fetchNormalQuote(): Promise<QuoteResponse> {
 export async function fetchQuotes(
   mode: QuoteMode = "programming"
 ): Promise<QuoteResponse> {
+  const defaultQuote: QuoteResponse = {
+    quote: "Something went wrong!",
+    author: "Quotify",
+  };
+
   // return quote according to quote mode
   // by default programming quotes are returned
   switch (mode) {
@@ -72,10 +89,9 @@ export async function fetchQuotes(
       const randomNum = Math.floor(Math.random() * 2);
       return randomNum == 0
         ? await fetchNormalQuote()
-        : await fetchNormalQuote();
+        : (await fetchProgrammingQuote()) || defaultQuote;
     }
     default:
-      // return await fetchProgrammingQuote();
-      return await fetchNormalQuote();
+      return (await fetchProgrammingQuote()) || defaultQuote;
   }
 }

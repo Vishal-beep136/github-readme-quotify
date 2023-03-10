@@ -2,7 +2,7 @@
   <img align="center" width="150" height="150" src="https://user-images.githubusercontent.com/82146140/205428839-3ceb9ae8-729d-4701-90fc-97e255f4405d.png" />
 
   <h1 align="center">Quotify For Readme</h1>
-  <h3 align="center">Programming | Normal quotes for your readme.</h3>
+  <h3 align="center">Programming, Normal Or Even Mixed Quotes For Your Readme.</h3>
 </p>
 
 
@@ -17,7 +17,6 @@
   </a>
 </p>
 
-> Note : Since Programming Api is down due to Heroku no longer provide free hosting we cannot get programming quotes :( But we can get normal quotes :)
 
 ## ⚡ Setup
 Copy the markdown below and paste it in your profile **Github Readme**.
@@ -148,21 +147,22 @@ And then run the app using:
 npx vercel dev
 ```
 
+## Likes This Project
+Consider giving a star 🌟
+
+
+
+## Contributing 🤝
+Contributions, issues and feature requests are always welcome!
+
+
+
 ## Special Thanks ❤
 
 - Inspired from [PiyushSuthar/github-readme-quotes](https://github.com/PiyushSuthar/github-readme-quotes).
 - [skolakoda/programming-quotes-api](https://github.com/skolakoda/programming-quotes-api) for Programming Quotes API.
 - [lukePeavey/quotable](https://github.com/lukePeavey/quotable) for Normal Quotes Api
  
-
-## Show your support 🌈
-
-Be sure to drop a 🌟 if you like the project!
-
-## Contributing 🤝
-Contributions, issues and feature requests are always welcome!
-
-
 <br>
 <br>
 <div align="center">Made by Vishal with 💙 and TypeScript</div>

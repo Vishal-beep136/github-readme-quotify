@@ -1,4 +1,5 @@
 import axios from "axios";
+import quotesData from "./quotes.json";
 
 const baseUrlProgrammingQuote =
   "https://github.com/skolakoda/programming-quotes-api/raw/master/Data/quotes.json";

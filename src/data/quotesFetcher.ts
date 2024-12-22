@@ -1,9 +1,7 @@
 import axios from "axios";
 import quotesData from "./quotes.json";
 
-const baseUrlProgrammingQuote =
-  "https://github.com/skolakoda/programming-quotes-api/raw/master/Data/quotes.json";
-const baseUrlNormalQuote = "https://api.quotable.io/random";
+const baseUrlNormalQuote = "https://api.api-ninjas.com/v1/quotes";
 
 export type QuoteMode = "programming" | "normal" | "mixed" | undefined;
 
@@ -15,20 +13,20 @@ interface QuoteResponse {
 
 // expected response from programming quote api
 interface ProgrammingQuoteResponse {
-  en: string;
+  text: string;
   author: string;
 }
 
 // expected response from normal quote api
 interface NormalQuoteResponse {
-  content: string;
+  quote: string;
   author: string;
 }
 
 // converting ProgrammingQuoteResponse to QuoteResponse
 const parseProgrammingQuote = (quoteData: ProgrammingQuoteResponse) => {
   return {
-    quote: quoteData.en,
+    quote: quoteData.text,
     author: quoteData.author,
   };
 };
@@ -36,7 +34,7 @@ const parseProgrammingQuote = (quoteData: ProgrammingQuoteResponse) => {
 // converting NormalQuote response to QuoteResponse
 const parseNormalQuote = (quoteData: NormalQuoteResponse) => {
   return {
-    quote: quoteData.content,
+    quote: quoteData.quote,
     author: quoteData.author,
   };
 };
@@ -46,7 +44,7 @@ const getRandomProgrammingQuote = (
   quotes: ProgrammingQuoteResponse[]
 ): ProgrammingQuoteResponse => {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-  return randomQuote.en.length < 220
+  return randomQuote.text.length < 220
     ? randomQuote
     : getRandomProgrammingQuote(quotes);
 };
@@ -54,10 +52,7 @@ const getRandomProgrammingQuote = (
 // only fetching programming quote
 async function fetchProgrammingQuote(): Promise<QuoteResponse | null> {
   try {
-    const response = await axios.get(baseUrlProgrammingQuote);
-    // whole programming quotes list
-    const data = response.data;
-    const randQuote = getRandomProgrammingQuote(data);
+    const randQuote = getRandomProgrammingQuote(quotesData);
     return parseProgrammingQuote(randQuote);
   } catch (e) {
     console.log(e);
@@ -67,8 +62,12 @@ async function fetchProgrammingQuote(): Promise<QuoteResponse | null> {
 
 // only fetching normal quote
 async function fetchNormalQuote(): Promise<QuoteResponse> {
-  const response = await axios.get(`${baseUrlNormalQuote}?maxLength=220`);
-  const data = response.data;
+  const response = await axios.get(`${baseUrlNormalQuote}`, {
+    headers: {
+      "X-Api-Key": process.env.NINJA_API_KEY,
+    },
+  });
+  const data = response.data[0];
   return parseNormalQuote(data);
 }
 
